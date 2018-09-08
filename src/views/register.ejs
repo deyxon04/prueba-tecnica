@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Technology</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.9/css/mdb.min.css" rel="stylesheet">
+
+  <style>
+    .material-icons {
+            padding-right: 10px;
+        }
+
+        #main div h1 {
+            text-align: center;
+            font-size: 50px;
+        }
+        #main div {
+            margin: 0% auto;
+        }
+        #main .container {
+            padding-top: 20px;
+            margin: 0% auto;
+        }
+
+        .page-content {
+            padding-top: 20px;
+        }
+
+        footer {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .page-footer {
+            background-color: #518110 !important;
+        }
+
+        .mdl-layout__header {
+            background-color: #518110;
+        }
+        .btn-info{
+            background-color: #518110 !important;
+            border-color: #518110;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+  <!-- Always shows a header, even in smaller screens. -->
+  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <header class="mdl-layout__header">
+      <div class="mdl-layout__header-row">
+        <!-- Title -->
+        <span>
+          <i class="material-icons">
+            store_mall_directory
+          </i>
+        </span>
+        <span class="mdl-layout-title"> Technology Store </span>
+        <!-- Add spacer, to align navigation to the right -->
+        <div class="mdl-layout-spacer"></div>
+        <!-- Navigation. We hide it in small screens. -->
+        <nav class="mdl-navigation mdl-layout--large-screen-only">
+        </nav>
+      </div>
+    </header>
+    <main id="main" class="mdl-layout__content">
+      <div class="page-content">
+        <!-- Textfield with Floating Label -->
+        <div class="container col-lg-6">
+          <h1 class="h1-responsive font-weight-bold text-center my-5">Registrar usuarios
+          </h1>
+          <form action="/register" method="POST" class="text-center border border-light p-5">
+            <p class="h4 mb-4 uni">Todos los campos son obligatorios</p>
+            <!-- Email -->
+            <input type="email" class="form-control is-valid mb-5" name="email" placeholder="Correo" required>
+
+            <!-- Password -->
+            <input type="password" id="defaultLoginFormPassword" name="password" class="form-control is-valid mb-5"
+              placeholder="Contraseña">
+            <!-- Sign in button -->
+            <button class="btn btn-info btn-block my-4" type="submit">Registrar usuario</button>
+
+            <!-- Register -->
+            <p class="font-weight-bold">Ya tienes una cuenta?
+              <a class="uni" href="/login">Inicia sesión</a>
+            </p>
+          </form>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <footer class="page-footer font-small blue pt-4">
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3 font-weight-bold">© 2018 Copyright:
+      <a href="">Miguel hinestroza</a>
+    </div>
+    <!-- Copyright -->
+
+  </footer>
+
+
+</body>
+
+<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+
+</html>
